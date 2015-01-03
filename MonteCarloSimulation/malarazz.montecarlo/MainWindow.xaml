@@ -1,0 +1,24 @@
+﻿<Window x:Class="malarazz.montecarlo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <TabControl>
+        <TabItem Header="Configuration">
+            <Grid Background="#FFE5E5E5">
+                <!--Labels-->
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Range" VerticalAlignment="Top" Margin="10,31,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Amount" VerticalAlignment="Top" Margin="10,59,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Interval" VerticalAlignment="Top" Margin="10,87,0,0"/>
+                
+                <!--Controls-->
+                <CheckBox Name="chkReplacement" Content="Replacement" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FlowDirection="RightToLeft"/>
+                <TextBox Name="txtRange" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="58,30,0,0"/>
+                <TextBox Name="txtAmount" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="58,58,0,0"/>
+                <TextBox Name="txtInterval" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="58,86,0,0"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Results">
+            <Grid Background="#FFE5E5E5"/>
+        </TabItem>
+    </TabControl>
+</Window>
